@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+
     <?php
         wp_head();
     ?>
+<heder>
+   <?php
+    if(! is_page('landing-page')):
 
+?>
+<section class="menu-area">
+    <div class="container">
+        <nav class="main menu">
+            <button class=" main-button">
+            <div class="main-menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                
+
+
+
+
+            </div>
+
+
+           </button>
+           <?php wp_nav_menu(array('theme_location'=>'wp_devs_menu','depth'=>2));?>
+
+
+        </nav>
+   </div>
+</section>
+
+<?php endif;?>
+
+    </header>
+    </head>
 <body>
     
